@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Mega menu challenge
+  body
+    //- pre=JSON.stringify(data, null, 2)
+    //- div=data.link.message
+    ul
+      each menu in data.menu
+        li
+          a(href=`/${menu.id}`)=menu.label
